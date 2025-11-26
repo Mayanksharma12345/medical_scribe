@@ -1,0 +1,44 @@
+# Application Settings
+APP_NAME=medical-scribe-ai
+APP_ENV=development
+DEBUG=true
+SECRET_KEY=your-secret-key-here-change-in-production-min-32-chars
+
+# Azure OpenAI Configuration (PRIMARY - You will use this)
+USE_OPENAI=false
+AZURE_OPENAI_ENDPOINT=https://devnov002.openai.azure.com/
+AZURE_OPENAI_API_KEY=DGgmE1n0Bj1TqDNCiT9DdmCRfop8Cp7AbN1kYj6YlGtFy3h4OkLMJQQJ99BKACHYHv6XJ3w3AAABACOGLeps
+AZURE_OPENAI_DEPLOYMENT_NAME=gpt-4o
+AZURE_OPENAI_API_VERSION=2024-11-20
+AZURE_WHISPER_DEPLOYMENT_NAME=whisper
+AZURE_OPENAI_API_VERSION_2 = 2025-01-01-preview
+
+# OpenAI Configuration (NOT USED - Kept for reference)
+#OPENAI_API_KEY=sk-not-used
+#OPENAI_MODEL=gpt-4
+#OPENAI_WHISPER_MODEL=whisper-1
+
+# Database
+DATABASE_URL=sqlite:///./medicalscribe.db
+
+# API Settings
+API_HOST=0.0.0.0
+API_PORT=8000
+API_PREFIX=/api/v1
+
+# CORS
+CORS_ORIGINS='http://localhost:3000','http://localhost:8000'
+
+# Storage (Local - No Azure costs)
+STORAGE_TYPE=local
+LOCAL_STORAGE_PATH=./data/uploads
+RECORDINGS_FOLDER=./data/recordings
+
+# Security & Compliance (Minimal for MVP)
+AUDIT_LOG_ENABLED=false
+PHI_ENCRYPTION_ENABLED=false
+
+# Feature Flags
+ENABLE_REAL_TIME_TRANSCRIPTION=true
+ENABLE_ICD10_SUGGESTIONS=true
+ENABLE_SOAP_GENERATION=true
