@@ -1,0 +1,148 @@
+.soap-note-display {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.header-section {
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.header-section h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.patient-header {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.patient-header p {
+  color: #666;
+  margin: 0;
+}
+
+.soap-sections {
+  margin: 30px 0;
+}
+
+.soap-section {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+}
+
+.soap-section h3 {
+  color: #333;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+
+.soap-section p {
+  color: #333;
+  line-height: 1.8;
+  white-space: pre-wrap;
+}
+
+.soap-section textarea {
+  width: 100%;
+  padding: 15px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.8;
+  resize: vertical;
+}
+
+.soap-section textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.code-list {
+  list-style: none;
+  padding: 0;
+}
+
+.code-list li {
+  padding: 10px;
+  margin: 8px 0;
+  background: white;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+
+.code-list strong {
+  color: #667eea;
+  margin-right: 10px;
+}
+
+.transcript-section {
+  margin: 30px 0;
+}
+
+.transcript-section details {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.transcript-section summary {
+  font-weight: 600;
+  color: #667eea;
+  cursor: pointer;
+  user-select: none;
+}
+
+.transcript-section summary:hover {
+  color: #764ba2;
+}
+
+.transcript-content {
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  max-height: 300px;
+  overflow-y: auto;
+  line-height: 1.8;
+  color: #333;
+}
+
+.action-buttons {
+  margin-top: 30px;
+  text-align: center;
+  padding-top: 20px;
+  border-top: 2px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .soap-note-display {
+    padding: 20px;
+  }
+  
+  .patient-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .action-buttons .btn {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+  }
+}

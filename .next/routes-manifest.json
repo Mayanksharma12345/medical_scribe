@@ -1,0 +1,159 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/api/v1/encounters/[id]",
+      "regex": "^/api/v1/encounters/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/v1/encounters/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/api/v1/Soap/[id]",
+      "regex": "^/api/v1/Soap/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/api/v1/Soap/(?<nxtPid>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/encounters/[id]",
+      "regex": "^/encounters/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPid": "nxtPid"
+      },
+      "namedRegex": "^/encounters/(?<nxtPid>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/data/encounters",
+      "regex": "^/api/data/encounters(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/data/encounters(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/login",
+      "regex": "^/api/v1/auth/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/login(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/logout",
+      "regex": "^/api/v1/auth/logout(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/logout(?:/)?$"
+    },
+    {
+      "page": "/api/v1/auth/signup",
+      "regex": "^/api/v1/auth/signup(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/auth/signup(?:/)?$"
+    },
+    {
+      "page": "/api/v1/encounters",
+      "regex": "^/api/v1/encounters(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/encounters(?:/)?$"
+    },
+    {
+      "page": "/api/v1/reports/dashboard",
+      "regex": "^/api/v1/reports/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/reports/dashboard(?:/)?$"
+    },
+    {
+      "page": "/api/v1/transcribe",
+      "regex": "^/api/v1/transcribe(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/v1/transcribe(?:/)?$"
+    },
+    {
+      "page": "/dashboard",
+      "regex": "^/dashboard(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/dashboard(?:/)?$"
+    },
+    {
+      "page": "/data-browser",
+      "regex": "^/data\\-browser(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/data\\-browser(?:/)?$"
+    },
+    {
+      "page": "/encounters",
+      "regex": "^/encounters(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/encounters(?:/)?$"
+    },
+    {
+      "page": "/encounters/new",
+      "regex": "^/encounters/new(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/encounters/new(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}
